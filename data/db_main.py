@@ -1,0 +1,4 @@
+from ..setting import SESSION_LOCAL, DATABASE_ENGINE
+
+
+print(SESSION_LOCAL)
