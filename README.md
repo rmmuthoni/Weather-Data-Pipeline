@@ -1,7 +1,5 @@
 # Weather Data Engineering Pipeline
 
-## Subtitle
-
 A data engineering project that uses Apache Airflow to orchestrate scheduled batch extraction of weather data from a weather API, transform the incoming data, and load it into PostgreSQL for visualization and business intelligence reporting.
 
 ## Problem Statement
