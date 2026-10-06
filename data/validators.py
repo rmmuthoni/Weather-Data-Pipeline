@@ -4,7 +4,7 @@ from pydantic import BaseModel,Field
 
 
 class WeatherDataValidator(BaseModel):
-    timestamp: str = Field(..., default_factory=lambda: datetime.now(), description="Timestamp of the weather data in ISO 8601 format")
+    timestamp: datetime = Field(..., default_factory=lambda: datetime.now(), description="Timestamp of the weather data in ISO 8601 format")
     temperature: float = Field(..., description="Temperature in Celsius")
     temperature_feels_like: float = Field(..., description="Feels like temperature in Celsius")
     temperature_min: float = Field(..., description="Minimum temperature in Celsius")

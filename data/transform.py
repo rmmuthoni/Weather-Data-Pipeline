@@ -40,4 +40,4 @@ def transform_weather_data() -> Any:
         print(f"Error validating weather data: {e}")
         validated_data = None
     else:
-        return validated_data
+        return validated_data.model_dump()

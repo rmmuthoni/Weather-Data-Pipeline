@@ -4,8 +4,9 @@ from typing import Any, Iterable, Sequence
 from sqlalchemy import Boolean, Column, DateTime, Float, Integer, String, create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-Base = declarative_base()
 
+Base = declarative_base()
+ 
 
 class WeatherData(Base):
     """Represents one weather observation stored in PostgreSQL."""

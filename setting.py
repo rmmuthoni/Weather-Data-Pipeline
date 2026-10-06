@@ -33,5 +33,5 @@ DATABASE_URL = AppSettings().DATABASE_URL.format(
     DATABASE_PASSWORD=AppSettings().DATABASE_PASSWORD
 )
 
-DATABASE_ENGINE = create_engine(DATABASE_URL, echo=True)  # Create a SQLAlchemy engine for the database connection 
+DATABASE_ENGINE = create_engine(DATABASE_URL, echo=True, connect_args={"sslmode": "require"})  # Create a SQLAlchemy engine for the database connection 
 SESSION_LOCAL = sessionmaker(bind=DATABASE_ENGINE, autoflush=False, autocommit=False)  # Create a local session factory for the database connection
